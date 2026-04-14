@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,70 +10,204 @@
 
 <body>
     <!--Header Principal-->
-<header class="header">
-    <div class="header-content">
-        <h1 class="logo">AdminPanel</h1>
-        <div class="user-info">
-            <span class="user-name"> Dayling</span>
-            <div class="user-avatar">D</div>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">AdminPanel</h1>
+            <div class="user-info">
+                <span class="user-name"> Dayling</span>
+                <div class="user-avatar">D</div>
 
-        </div>      
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+
+                    <li class="nav-item">
+                        <a href="#dashboard" class="nav-link active">
+                            <span class="nav-icon">📊</span>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#products" class="nav-link">
+                            <span class="nav-icon">📦</span>
+                            <span class="nav-text">Productos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#users" class="nav-link">
+                            <span class="nav-icon">👥</span>
+                            <span class="nav-text">Gestion de Usuarios</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#reports" class="nav-link">
+                            <span class="nav-icon">📈</span>
+                            <span class="nav-text">Reportes de ventas</span>
+                        </a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#settings" class="nav-link">
+                            <span class="nav-icon">⚙️</span>
+                            <span class="nav-text">Configuración</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+
+
+            </nav>
+        </aside>
+
+
+        <!--contenido principal-->
+        <main class="main-content">
+
+            <section id="dashboard" class="seccion-vista">
+                <div class="content-header">
+                    <h2 class="page-title">Dashboard</h2>
+                    <p class="page-description">Vista general del sistema</p>
+                </div>
+                <!-- Tarjetas de estadisticas -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-icon">💰</span>
+                        <div>
+                            <span class="stat-value">$10,000</span>
+                            <p class="stat-label">Ventas Totales</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">📦</span>
+                        <div>
+                            <span class="stat-value">170</span>
+                            <p class="stat-label">Productos en Inventario</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">👥</span>
+                        <div>
+                            <span class="stat-value">12</span>
+                            <p class="stat-label">Usuarios Registrados</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="products" class="seccion-vista">
+                <div class="content-header">
+                    <h2 class="page-title">Productos</h2>
+                    <p class="page-description">Administración de productos y stock</p>
+                </div>
+                <!-- Tabla de productos -->
+                <div class="table-container">
+                    <table class="products-table">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Unidades en Stock</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cuaderno</td>
+                                <td>$25.00</td>
+                                <td>50</td>
+                                <td><span class="status-pill status-active">Disponible</span></td>
+                            </tr>
+                            <tr>
+                                <td>Borrador</td>
+                                <td>$0.25</td>
+                                <td>100</td>
+                                <td><span class="status-pill status-inactive">No Disponible</span></td>
+                            </tr>
+                            <tr>
+                                <td>Bolígrafo</td>
+                                <td>$1.50</td>
+                                <td>0</td>
+                                <td><span class="status-pill status-out">Agotado</span></td>
+                            </tr>
+                            <tr>
+                                <td>Resaltador</td>
+                                <td>$2.00</td>
+                                <td>20</td>
+                                <td><span class="status-pill status-active">Disponible</span></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+            </section>
+
+            <section id="users" class="seccion-vista">
+                <div class="content-header">
+                    <h2 class="page-title">Gestion de Usuarios</h2>
+                    <p class="page-description">Administracion de usuarios y permisos</p>
+                    <div class="table-container">
+                        <table class="products-table">
+                            <thead>
+                                <tr>
+                                    <th>Usuario</th>
+                                    <th>Rol</th>
+                                    <th>Estado</th>
+                                    <th>¿Qué puede hacer?</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td class="user-cell">
+                                        <div class="user-avatar-small">D</div>
+                                        <span class="user-name">Dayling</span>
+                                    </td>
+
+                                    <td><span class="role-badge">Administrador</span></td>
+
+                                    <td><span class="status-pill status-active">Activo</span></td>
+
+                                    <td class="permissions">Gestionar todo el sistema</td>
+
+                                    <td>
+                                        <button class="btn-action">✏️</button>
+                                        <button class="btn-action">🗑️</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="user-cell">
+                                        <div class="user-avatar-small blue">M</div>
+                                        <strong>Mario Rossi</strong>
+                                    </td>
+                                    <td><span class="role-badge editor">Editor</span></td>
+                                    <td><span class="status-pill status-active">Activo</span></td>
+                                    <td class="permissions">Editar productos y reportes</td>
+                                    <td>
+                                        <button class="btn-action">✏️</button>
+                                        <button class="btn-action">🗑️</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+            </section>
+
+           
+        </main>
     </div>
-</header>
-
-<div class ="main-container">
-    <aside class="sidebar">
-        <nav class="sidebar-nav">
-            <ul class="nav-list">
-                <li class="nav-item">
-                 <a href="#dashboard"class="nav-link active">
-                    <span class="nav-icon">📊</span>
-                    <span class="nav-text">Dashboard</span>
-                 </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#users" class="nav-link">
-                        <span class="nav-icon">👥</span>
-                        <span class="nav-text">Usuarios</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#settings" class="nav-link">
-                        <span class="nav-icon">⚙️</span>
-                        <span class="nav-text">Configuración</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#reports" class="nav-link">
-                        <span class="nav-icon">📈</span>
-                        <span class="nav-text">Reportes</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#logout" class="nav-link">
-                        <span class="nav-icon">😊</span>
-                        <span class="nav-text">Cerrar Sesión</span>
-                    </a>
-
-        
-                
-
-        </nav>
-    </aside>
-    <main class="main-content">
-        
-    </main>
-</div>
-    <!--contenido principal-->
-<main class="main-content">
- <div class="content-header">
-        <h2 class="page-title">Dashboard</h2>
-        <p class="page-description">Vista general del sistema</p>
- </div>
-</main>
-
-<!-- Tarjetas de estadísticas --> 
-
-        
 </body>
+
 </html>
