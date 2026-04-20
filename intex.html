@@ -204,6 +204,110 @@
 
                 </div>
             </section>
+             <section id="reports" class="seccion-vista">
+                <div class="content-header">
+                    <h2 class="page-title">Reportes de ventas</h2>
+                    <p class="page-description">Analisis de ventas y rendimiento</p>
+                </div>
+                <!-- 1. Tarjetas de Resumen (Diferentes a las del Dashboard) -->
+                <div class="stats-grid">
+                    <article class="stat-card">
+                        <span class="stat-icon">💰</span>
+                        <div class="stat-info">
+                            <span class="stat-number">$45,280.00</span>
+                            <p class="stat-label">Ingresos Totales</p>
+                        </div>
+                    </article>
+
+                    <article class="stat-card">
+                        <span class="stat-icon">📈</span>
+                        <div class="stat-info">
+                            <span class="stat-number">+12.5%</span>
+                            <p class="stat-label">Crecimiento Mensual</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 2. Tabla de Transacciones Recientes -->
+                <div class="table-container" style="margin-top: var(--spacing-lg);">
+                    <h3 style="margin-bottom: var(--spacing-md);">Transacciones Recientes</h3>
+                    <table class="products-table">
+                        <thead>
+                            <tr>
+
+                                <th>Cliente</th>
+                                <th>Fecha</th>
+                                <th>Total</th>
+                                <th>Método de Pago</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td>Juan Pérez</td>
+                                <td>12 Oct 2023</td>
+                                <td>$150.00</td>
+                                <td>Tarjeta</td>
+                            </tr>
+                            <tr>
+
+                                <td>Ana López</td>
+                                <td>13 Oct 2023</td>
+                                <td>$85.50</td>
+                                <td>Efectivo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+            <section id="settings" class="seccion-vista">
+                <div class="content-header">
+                    <h2 class="page-title">Configuración</h2>
+                    <p class="page-description">Ajustes del sistema y preferencias</p>
+                </div>
+                <div class="settings-container">
+
+                    <div class="settings-card">
+                        <h3>👤 Perfil del Administrador</h3>
+                        <div class="settings-form">
+                            <div class="form-group">
+                                <label>Nombre de Usuario</label>
+                                <input type="text" value="Dayling" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label>Correo Electrónico</label>
+                                <input type="email" value="admin@ejemplo.com" class="form-input">
+                            </div>
+                            <button class="btn-save">Actualizar Perfil</button>
+                        </div>
+                    </div>
+
+
+                    <div class="settings-card">
+                        <h3>⚙️ Preferencias del Sistema</h3>
+                        <div class="settings-list">
+                            <div class="setting-item">
+                                <div class="setting-text">
+                                    <strong>Modo Oscuro</strong>
+                                    <p>Cambia la apariencia del panel a colores oscuros.</p>
+                                </div>
+
+                                <button class="btn-toggle">Desactivado</button>
+                            </div>
+                            <div class="setting-item">
+                                <div class="setting-text">
+                                    <strong>Notificaciones por Correo</strong>
+                                    <p>Recibir alertas de ventas nuevas y bajo stock.</p>
+                                </div>
+                                <button class="btn-toggle active">Activado</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
 
            
         </main>
